@@ -69,7 +69,7 @@ This lab provided hands-on experience with AWS IAM by demonstrating how organiza
 
 
 ## Author
-**Name:** pravish J (212224040249)
+**Name:** KAVIARASAN K B (212224110030)
 
 **Course:** Cloud Computing
 
