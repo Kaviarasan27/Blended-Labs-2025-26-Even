@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: PRAVISH J
-* **Register Number**: 212224040249
-* **Date of Submission**: 27.02.2026
+* **Name**: KAVIARASAN K B
+* **Register Number**: 212224110030
+* **Date of Submission**: 17.5.2026
 
 ---
 
@@ -96,79 +96,35 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-First, I logged in to the AWS Management Console using my AWS account.
+(Write the steps you followed in your own words)
 
-I searched for EC2 in the services section and opened the EC2 Dashboard.
+1.The EC2 Dashboard was accessed through the AWS Management Console to explore the Amazon EBS volume types.
 
-I explored different sections like Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand their functions.
+2.A new EBS volume was created by selecting the volume type, size, and the same Availability Zone as the EC2 instance.
 
-I clicked on the “Launch Instance” button to create a new EC2 instance.
+3.The created EBS volume was attached to the running EC2 instance as an additional block device.
 
-I selected Amazon Linux 2 AMI as the operating system.
+4.The attached volume was formatted using the ext4 file system and mounted to a directory in the EC2 instance.
 
-I chose the t2.micro instance type because it is eligible for the AWS Free Tier.
-
-I entered a name for my instance to identify it easily.
-
-I created a new key pair, selected the PEM format, and downloaded it to my system.
-
-I configured the security group settings.
-
-I allowed SSH access on Port 22 only from my IP address.
-
-I allowed HTTP access on Port 80 from anywhere (0.0.0.0/0).
-
-I reviewed all the configurations and clicked on “Launch Instance.”
-
-After launching, I waited until the instance state changed to “Running.”
-
-I copied the public IP address of the instance from the EC2 dashboard.
-
-I opened the terminal and navigated to the folder where the key pair file was saved.
-
-I connected to the instance using the SSH command:
-ssh -i "keyname.pem" ec2-user@<Public-IP>
-
-I successfully logged in to the Amazon Linux server.
-
-I went back to the EC2 console and selected the instance.
-
-I clicked on “Stop” and observed the instance state changing to “Stopped.”
-
-I clicked on “Start” and observed the state changing back to “Running.”
-
-I also performed the “Reboot” operation and noticed that the instance restarted.
-
-I opened the “Monitoring” tab to check CPU utilization and network metrics.
-
-I observed the status checks to ensure the instance was running properly.
-
-After completing the experiment, I selected the instance and clicked on “Terminate.”
-
-I confirmed the termination and observed that the instance state changed to “Terminated.”
+5.Sample data was stored in the mounted volume, and after rebooting the instance, data persistence was verified successfully.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-<img width="793" height="773" alt="image" src="https://github.com/user-attachments/assets/703cfe64-fed0-47dd-8ab9-9f0c7001db5c" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ce0083b7-db91-48e1-9b30-8d4a403945d6" />
 
-
----
 
 ### Screenshot 2: SSH Connection to Instance
 
----
-<img width="1067" height="1021" alt="Screenshot 2026-02-27 134044" src="https://github.com/user-attachments/assets/015e4c71-f6a1-4f2e-a6f1-b143090ae282" />
-<img width="1055" height="1036" alt="Screenshot 2026-02-27 134647" src="https://github.com/user-attachments/assets/1963642c-2b48-493a-9b61-bea787cf95aa" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/8dbfb958-8e1a-4f75-a523-d12152d7e534" />
 
 
 ### Screenshot 3: Instance Monitoring / Status
 
-<img width="840" height="805" alt="image" src="https://github.com/user-attachments/assets/d83cab52-c65e-42c7-8bfc-6cb3c25664d5" />
-<img width="838" height="799" alt="image" src="https://github.com/user-attachments/assets/e4c7c3c7-6ca5-4ad5-ae30-2f0a1de49b7e" />
+<img width="1352" height="708" alt="Screenshot 2026-04-19 153356" src="https://github.com/user-attachments/assets/14232174-05a7-4110-ab37-e863f1119ed9" />
+<img width="1352" height="708" alt="Screenshot 2026-04-19 153356" src="https://github.com/user-attachments/assets/ab25b83d-9d4f-4c39-9497-1ae765d35538" />
 
----
 
 ## Result 
 
